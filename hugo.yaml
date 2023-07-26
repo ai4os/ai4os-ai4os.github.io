@@ -194,8 +194,12 @@ params:
       column1:
         title: "About us"
         links:
-        - text: AI4EOSC project
-          link: https://ai4eosc.eu/
+        - text: About
+          link: /about
+        - text: Powered by AI4EOSC
+          link: /powered-by
+        - text: Documentation
+          link: https://docs.ai4os.eu
         - text: AI4OS and AI4EOSC have received funding from the European Union's Horizon Europe 2022 research and innovation programme under agreement 101058593
           link: https://cordis.europa.eu/project/id/101058593
       column2:

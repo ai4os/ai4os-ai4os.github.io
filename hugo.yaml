@@ -1,0 +1,214 @@
+baseURL: https://ai4os.eu
+languageCode: en-us
+title: AI4OS
+
+module:
+  # uncomment line below for local development of module
+  # workspace: hugo.work
+  imports:
+    - path: hugo-fresh
+    - path: github.com/jgthms/bulma
+
+
+googleAnalytics: # Put in your tracking code without quotes like this: UA-XXX for universal tracking or G-XXX analytics v4 tracking
+# Disables warnings
+disableKinds:
+- taxonomy
+- taxonomyTerm
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Allows you to write raw html in your md files
+
+params:
+  # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
+  openGraph: true
+  # Used as meta data; describe your site to make Google Bots happy
+  description: AI4OS is a softare distribution to build AI platforms on distributed clouds.
+  # Preloader ensures images are loaded before displaying to the user. If you don't want it uncomment to set it to false
+  # preloader: false
+  navbarlogo:
+  # Logo (from static/images/logos/___)
+    # image: logo.png
+    # link: /
+    # # Default width/height. Uncomment if you need to change
+    # width: 230
+    # height: 50
+  font:
+    name: "Roboto"
+    sizes: [400,600]
+  hero:
+    # Main hero title
+    title: "AI4OS: Build distributed AI platforms."
+    # Hero subtitle (optional)
+    subtitle: AI4OS allows to create customizable AI platforms over distributed clouds.
+    # Button text
+    buttontext: Get started
+    # Where the main hero button links to
+    buttonlink: "https://docs.ai4os.eu/"
+    # Hero image (from static/images/___)
+    image: illustrations/worker.svg
+    # Footer logos (from static/images/logos/clients/*.svg)
+    # urls are optional
+    clientlogos:
+    - logo: ai4eosc
+      url: https://ai4eosc.eu
+    - logo: imagine
+      url: https://imagine-ai.eu
+    - logo: csic
+      url: https://csic.es
+  # Customizable navbar. For a dropdown, add a "sublinks" list.
+  navbar:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+  - title: Powered by AI4EOSC
+    url: /powered-by
+  - title: Documentation
+    url: https://docs.ai4os.eu
+  - title: Code
+    sublinks:
+    - title: AI4OS Github
+      url: https://github.com/ai4os
+    - title: AI4OS-Hub Github
+      url: https://github.com/ai4os-hub
+  # - title: Log in
+  #   url: /
+  # - title: Sign up
+  #   url: /
+  #   button: true
+  # sidebar:
+    # # Logo (from /images/logos/___.svg)
+    # logo: fresh-square
+    # sections:
+    # - title: User
+    #   icon: user
+    #   links:
+    #   - text: Profile
+    #     url: /
+    #   - text: Account
+    #     url: /
+    #   - text: Settings
+    #     url: /
+    # - title: Messages
+    #   icon: envelope
+    #   links:
+    #   - text: Inbox
+    #     url: /
+    #   - text: Compose
+    #     url: /
+    # - title: Images
+    #   icon: image
+    #   links:
+    #   - text: Library
+    #     url: /
+    #   - text: Upload
+    #     url: /
+    # - title: Settings
+    #   icon: cog
+    #   links:
+    #   - text: User settings
+    #     url: /
+    #   - text: App settings
+    #     url: /
+  # section1:
+  #   title: Great power comes
+  #   subtitle: with great responsibility
+  #   tiles:
+  #   - title: App builder
+  #     icon: mouse-globe
+  #     text: This is some explanatory text that is on two rows
+  #     url: /
+  #     buttonText: Free trial
+  #   - title: Cloud integration
+  #     icon: laptop-cloud
+  #     text: This is some explanatory text that is on two rows
+  #     url: /
+  #     buttonText: Get started
+  #   - title: Add-ons & plugins
+  #     icon: plug-cloud
+  #     text: This is some explanatory text that is on two rows
+  #     url: /
+  #     buttonText: Get started
+  # section2:
+  #   title: You're here because you want the best
+  #   subtitle: And we know it
+  #   features:
+  #   - title: Powerful and unified interface
+  #     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+  #     # Icon (from /images/illustrations/icons/___.svg)
+  #     icon: laptop-globe
+  #   - title: Cross-device synchronisation
+  #     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+  #     icon: doc-sync
+  #   - title: Nomad system
+  #     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+  #     icon: mobile-feed
+  # section3:
+  #   title: One platform
+  #   subtitle: To rule them all
+  #   image: dashboard.png
+  #   buttonText: Get started
+  #   buttonLink: "#"
+  # section4:
+  #   title: Our Clients love us!
+  #   subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
+  #   clients:
+  #   - name: Irma Walters
+  #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+  #     job: Accountant
+  #     img: 1
+  #   - name: John Bradley
+  #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+  #     job: Financial Analyst
+  #     img: 2
+  #   - name: Gary Blackman
+  #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+  #     job: HR Manager
+  #     img: 3
+  # section5:
+  #   title: Drop us a line or two
+  #   subtitle: We'd love to hear from you
+  #   buttonText: Send Message
+  #   # action: https://formspree.io/f/<form_id>
+  #   # method: POST
+  footer:
+    # Logo (from /images/logos/___)
+    # logo: vertical-transparent.svg
+    # Social Media Title
+    socialmediatitle: Follow Us
+    # Social media links (GitHub, Twitter, etc.). All are optional.
+    socialmedia:
+    - link: https://github.com/ai4os
+      # Icons are from Font Awesome
+      icon: github
+    - link: https://twitter.com/AI4EOSC
+      icon: twitter
+    - link: https://www.youtube.com/@ai4eosc
+      icon: youtube
+    # - link: https://mastodon.social/@ai4eosc
+    #   icon: mastodon
+    bulmalogo: false
+    quicklinks:
+      column1:
+        title: "About us"
+        links:
+        - text: AI4EOSC project
+          link: https://ai4eosc.eu/
+        - text: AI4OS and AI4EOSC have received funding from the European Union's Horizon Europe 2022 research and innovation programme under agreement 101058593
+          link: https://cordis.europa.eu/project/id/101058593
+      column2:
+        title: "Documentation"
+        links:
+        - text: Get started
+          link: https://docs.ai4eosc.eu/en/latest/get-started
+        - text: User guides
+          link: https://docs.ai4eosc.eu/en/latest/
+      column3:
+        title: "Contact"
+      #   links:
+      #   - text: Latest news
+      #     link: /blog/first
+      #   - text: Tech articles
+      #     link: /blog/second
